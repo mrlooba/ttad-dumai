@@ -4,11 +4,12 @@
       "source": "/",
       "destination": "https://script.google.com/macros/s/AKfycbypyly5VuipaNW_2bNoDROlaYJ52uu278gkQwW9KKL70hL-K2CC3gNFNh76Jd59tBNI/exec",
       "permanent": false
-    },
+    }
+  ],
+  "rewrites": [
     {
       "source": "/:slug([a-zA-Z0-9_-]+)",
-      "destination": "https://script.google.com/macros/s/AKfycbypyly5VuipaNW_2bNoDROlaYJ52uu278gkQwW9KKL70hL-K2CC3gNFNh76Jd59tBNI/exec?to=:slug",
-      "permanent": false
+      "destination": "/api/go?slug=:slug"
     }
   ]
 }
